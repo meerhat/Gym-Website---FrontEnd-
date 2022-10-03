@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gymimg4.png ');
+        height: 1056px;
+        width: 1500px;
+        color: azure;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        height: 1300px;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 23px;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .center {
+        display: block;
+        width: 70%;
+        margin: 23px auto;
+        /* border: 2px solid greenyellow; */
+        text-align: center;
+        line-height: 55px;
+        
+    }
+    
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 23px;
+    }
+    
+    .navbar li {
+        display: inline-block;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: whitesmoke;
+        /* background-color: black; */
+        padding: 15px 23px;
+        font-size: 25px;
+        
+    }
+    
+    .navbar li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: black;
+    }
+
+    .btn {
+        margin: 0px;
+        padding: 12px;
+        font-size: 20px;
+        background-color: darkgrey;
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 30px;
+    }
+    
+    .btn:hover {
+        text-decoration: underline;
+        background-color: ghostwhite;
+    }
+
+    .container {
+        position: sticky;
+        top: 23px;
+        right: 4px;
+        border: 2px solid black;
+        margin: 120px 1345px;
+        padding: 34px;
+        width: 410px;
+        border-radius: 30px;
+        /* background-color: grey; */
+    }
+    .formgrp input {
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 12px;
+        margin: 7px auto;
+        border-radius: 30px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .container h1{
+        text-align: center;
+        /* color: whitesmoke; */
+    }
+    .btnr{/*or .container button*/
+        margin: 0px;
+        padding: 7px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+        width: 102px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btnr:hover{
+        background-color: grey;
+        font-style: bold;
+        /* font-family:Verdana, Geneva, Tahoma, sans-serif ; */
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!--for the logo-->
+            <img src="img/logo.png" alt="">
+        </div>
+
+        <div class="center">
+            <!--for navbar-->
+            <!-- CENTER -->
+            <div class="navbar">
+                <ul class="navabr">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <!--for the buttons-->
+            <button class="btn">Login</button>
+            <button class="btn">Sign Up</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>
+            Register Here
+        </h1>
+        <form action="noaction.php">
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your username">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your email">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="" placeholder="Enter your phone number">
+            </div>
+            <button class="btnr">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
